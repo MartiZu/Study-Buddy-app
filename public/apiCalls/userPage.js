@@ -1,5 +1,5 @@
+const baseUrl = "https://study-buddy-app.onrender.com";
 
-//////////getting user information from the back end using user ID
 let userid = localStorage.getItem('id')
 
 document.addEventListener("DOMContentLoaded", populateUserData(userid));
@@ -8,7 +8,7 @@ async function populateUserData(id){
 console.log("hello" + id)
     let resource = {id: id};
     let JSONdata = JSON.stringify(resource);
-    let response = await fetch("http://localhost:7000/users/user", {
+    let response = await fetch(`${baseUrl}/users/user`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
