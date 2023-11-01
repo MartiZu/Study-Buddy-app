@@ -129,7 +129,7 @@ async function resetDatabase() {
       INSERT INTO users (name, email, username, password, imglink)
       VALUES
       ('Olivia Johnson', 'Olivia.123@gmail.com', 'Livi1996', '$2b$10$eSMkuyVtfdWuLTLonkPHIe0YdOK43quCXFce49DMWlz0oyA8fXZEO', 'https://res.cloudinary.com/ddckdaelz/image/upload/v1697441490/Illustration/lost_exbnp0.jpg'),
-      ('Martina', 'martina@gmail.com', 'Martina1', '$2b$10$wIdqrcM31m0PC/KIwh1lOeXuxiE/bK1AaSP6.eOtxqsjCdogkpg9O', 'https://cdn.iconscout.com/icon/premium/png-512-thumb/eco-mind-8498349-7013971.png?f=webp&w=256'),
+      ('Martina Zurli', 'martina1@gmail.com', 'Marti147', '$2b$10$CFpBIFVbIjy1InrrnRrsgey660FbeRhk5mskesxzzfdoyAN4N2ZPO', 'https://cdn.iconscout.com/icon/premium/png-512-thumb/eco-mind-8498349-7013971.png?f=webp&w=256'),
       ('Danny Ryan', 'dannykryan@gmail.com', 'dannykryan', '$2b$10$azMnp/SVmuASWAgKyQMtPuUrFgjLVQ.IRFkaU6/iUF0TgtxR54Ht.', 'https://avatars.githubusercontent.com/u/111202444?v=4')
     `);
 
