@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon -r dotenv/config server/server.js",
-    "reset-database": "node -r dotenv/config server/db/scripts/reset-database.js"
+    "start": "node backend/server.js",
+    "dev": "nodemon -r dotenv/config backend/server.js",
+    "reset-database": "node -r dotenv/config backend/db/scripts/reset-database.js"
   },
   "keywords": [],
   "author": "",
