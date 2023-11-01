@@ -19,8 +19,10 @@ At the end of the project we were able to create a register/login page, hasing a
 1.	Create a feature to allow users to request a meeting, or set a meeting for others to join.
 2.	Implement our API to allow users to delete and modify the learning resources.
 3.	Allow users to set a scoring on their skills so that the user can match with other users who would be able to offer support with specific skills.
-4.	Create smaller meeting rooms (e.g. with a max of 5partecipant) where users can join until the room is full. 
+4.	Create smaller meeting rooms (e.g. with a max of 5partecipant) where users can join until the room is full.
 
-[![Watch the video](https://img.youtube.com/vi/L-WxnATCCro/sddefault.jpg)](https://youtu.be/L-WxnATCCro)
-
-[![Watch the video](https://img.youtube.com/vi/L-WxnATCCro/hqdefault.jpg)](https://youtu.be/L-WxnATCCro)
+## How to use
+1. After you clone the repo you will need to write in your terminal "npm i" to install all packages.
+2. You will need to create a .env file and store your db connecting using DB_CONNECTION_STRING
+3. In the same .env file you will also need to set up your variable PORT
+4. Now write in your terminal "npm run dev" and open the login page using your localhost port number
