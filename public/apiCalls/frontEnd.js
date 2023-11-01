@@ -1,4 +1,4 @@
-const baseUrl = "https://study-buddy-app.onrender.com";
+const baseUrl = "https://study-buddy-app-backend.onrender.com";
 
 //API call to get conent to populate front end page
 document.addEventListener("DOMContentLoaded", populate);

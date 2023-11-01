@@ -1,4 +1,4 @@
-const baseUrl = "https://study-buddy-app.onrender.com";
+const baseUrl = "https://study-buddy-app-backend.onrender.com";
 
 let userid = localStorage.getItem('id')
 

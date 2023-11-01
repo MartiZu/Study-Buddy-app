@@ -1,4 +1,4 @@
-//login attempt
+const baseUrl = "https://study-buddy-app-backend.onrender.com";
 //export const userName = ''
 const loginForm = document.getElementById("logInData");
 const continueBtn = document.querySelector(".popUp");
