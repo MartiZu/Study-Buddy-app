@@ -3,14 +3,14 @@
  ## Introduction
 [![Watch the video](https://img.youtube.com/vi/L-WxnATCCro/mqdefault.jpg)](https://youtu.be/L-WxnATCCro) 
 
-## How to use
-1. After you clone the repo you will need to write in your terminal "npm i" to install all packages.
-2. You will need to create a .env file and store your db connecting using DB_CONNECTION_STRING
-3. In the same .env file you will also need to set up your variable PORT
-4. Now write in your terminal "npm run dev" and open the login page using your localhost port number
-
 Here is the team project I did on week 8 of The School of Code Bootcamp! Team work was essential to create this great app and I am so amazed by what we were able to build in 4 days. 
 We were asked to reflect on what fellow bootcampers need during the Bootcamp to supprot them and provide a solution to a problem. As a team we all shared what problems we encountered, we then dot voted and identified a problem we wanted to tackle as a team. The sense of isolation bootcamper experience while studying remotely and the need to upskill.
+
+### How to use
+1. After you clone the repo you will need to write in your terminal "npm i" to install all packages.
+2. You will need to create a .env file and create a variable DB_CONNECTION_STRING. Give it value of your database connection string.
+3. In the same .env file you will also need to create a variable PORT and assign it a value that you want.
+4. Now write in your terminal "npm run dev" and open the login page using your localhost port number.
 
 ## Planning phase
 We spent the first 2 days doing research and planning. We used Figma to build a low and high fidelity wireframe, we conducted research interviews and collected data using a questionnaire. All the data collected was used to create 2 user personas and build users stories. That's how our idea started to become something more concrete. We used Disney ideation to focus on what we would have actually been able to build in the time frame we had and with the set of skills we had. Ultimately we defined an MVP and extra features that we would have loved to build, but that we might not have time to do during the project week.
