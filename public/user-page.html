@@ -16,7 +16,7 @@
       <a href="index.html"
         ><img
           id="logo"
-          src="../assets/images/study-buddy-logo-2.png"
+          src="./assets/images/study-buddy-logo-2.png"
           alt="study buddy logo"
       /></a>
       <div id="user-info">
@@ -37,31 +37,52 @@
             >
           </div>
         </div>
+        </div>
         <div id="user-infobox">
           <h2 id="user-infobox-header">User Stats:</h2>
+          <!-- first rating -->
           <div class="rating-container">
             Front-End:
-            <div class="star-container" id="front-end-rating">★★★</div>
-            <div class="empty-star">★★</div>
-            <!-- <input type="range" min="1" max="5" value="1" id="starSlider" />
-                    <div id="stars">
-                      <span class="star-icon">★</span>
-                    </div></div> -->
+            <div class="star-container" id="front-end-rating">
+              <div id="fe-stars">
+                <span class="star-icon1">★</span>
+              </div>
+              <input type="range" min="1" max="5" value="1" id="fe-starSlider" />
+            </div>
+            <!-- <div class="empty-star">★★</div> -->
+           </div>
           </div>
+          <!-- second rating -->
           <div class="rating-container">
             Back-End:
-            <div class="star-container" id="back-end-rating">★★★</div>
-            <div class="empty-star">★★</div>
+            <div class="star-container" id="back-end-rating">
+              <div id="be-stars">
+                <span class="star-icon2">★</span>
+              </div>
+              <input type="range" min="1" max="5" value="1" id="be-starSlider" />
+            </div>
+            </div>
+            <!-- <div class="empty-star">★★</div> -->
           </div>
+          <!-- third rating -->
           <div class="rating-container">
             UI &amp; UX:
-            <div class="star-container" id="uiux-rating">★★★★</div>
-            <div class="empty-star">★</div>
+            <div class="star-container" id="uiux-rating">
+              <div id="ui-stars">
+                <span class="star-icon3">★</span>
+              </div>
+              <div class="slider-container">
+<input type="range" min="1" max="5" value="1" id="ui-starSlider" />
+</div>
+            </div>
+            <!-- <div class="empty-star">★</div> -->
           </div>
+
+
           <a href="https://github.com/MartiZu"
             ><img
               id="github-icon"
-              src="../assets/images/icons/github-icon-white.png"
+              src="./assets/images/icons/github-icon-white.png"
               alt="Github icon"
           /></a>
         </div>

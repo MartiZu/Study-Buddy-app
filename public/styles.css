@@ -13,6 +13,8 @@ nav {
     align-items: center;
     padding-left: 2.2rem;
     padding-right: 2.2rem;
+    width: 430px;
+    margin-left: 430px;
 }
 
 #logo {
@@ -484,6 +486,7 @@ visibility: hidden;
 #uiux-rating {
     color: #C89AFF;
 }
+
 
 .star-container {
     font-size: 24px;
