@@ -371,11 +371,11 @@ form input {
   background-color: #c89aff;
 }
 
-#fe-starSlier {
+#fe-starSlider {
   accent-color: #fcc699;
 }
 #be-starSlider {
-  accent-color: #50a2ff;
+  accent-color: #00c39a;
 }
 
 #ui-starSlider {
@@ -488,7 +488,7 @@ form input {
 }
 
 #back-end-rating {
-  color: #50a2ff;
+  color: #00c39a;
 }
 
 #uiux-rating {
