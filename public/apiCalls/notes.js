@@ -139,8 +139,8 @@ async function deleteNote(noteId) {
 
 async function editNote(noteId) {
   openEditForm();
-  async function submitEditedNote(e) {
-    e.preventDefault(); // Prevent the default form submission behavior
+  async function submitEditedNote() {
+    // e.preventDefault(); // Prevent the default form submission behavior
     const title = document.getElementById("editTitleInput").value;
     const note = document.getElementById("editBodyInput").value;
     console.log(title);
@@ -160,9 +160,6 @@ async function editNote(noteId) {
         });
         console.log(response);
         if (response.ok) {
-          // Close the form after a successful update
-          // closeEditForm();
-
           // Update the UI to reflect the changes
           updateUI();
         } else {
@@ -175,10 +172,7 @@ async function editNote(noteId) {
   }
   const editForm = document.getElementById("edit-submit-button");
   console.log(editForm);
-  editForm.addEventListener("click", function (e) {
-    e.preventDefault();
-    submitEditedNote(e);
-  });
+  editForm.addEventListener("click", submitEditedNote);
 }
 
 function openAddForm() {
@@ -193,6 +187,6 @@ function openEditForm() {
   document.getElementById("edit-note-form").style.visibility = "visible";
 }
 
-// function closeEditForm() {
-//   document.getElementById("edit-note-form").style.visibility = "hidden";
-// }
+function closeEditForm() {
+  document.getElementById("edit-note-form").style.visibility = "hidden";
+}
