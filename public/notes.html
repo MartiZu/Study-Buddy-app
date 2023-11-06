@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Buddy Note Taking</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;600&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"
+        ><img
+          id="logo"
+          src="./assets/images/study-buddy-logo-2.png"
+          alt="study buddy logo"
+      /></a>
+      <div id="user-info"></div>
+    </nav>
+    <main>
+      <header>
+        <h1>NOTES</h1>
+      </header>
+      <div id="notes-container">
+        <ul id="display-note"></ul>
+      </div>
+      <footer>
+        <a id="add-note" onclick="openForm()"
+          ><img src="./assets/images/Plus.png" class="submit-note" alt="plus"
+        /></a>
+        <form id="add-note-form">
+          <h2>Add note</h2>
+          <input type="text" id="titleInput" placeholder="Note title" />
+          <textarea
+            id="noteBodyInput"
+            placeholder="Write your note..."
+          ></textarea>
+          <button type="submit" id="form-submit-button" onclick="closeForm()">
+            Submit
+          </button>
+          <button id="form-cancel-button" type="button" onclick="closeForm()">
+            Cancel
+          </button>
+        </form>
+      </footer>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
