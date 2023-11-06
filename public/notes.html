@@ -20,15 +20,20 @@
       /></a>
       <div id="user-info"></div>
     </nav>
-    <main>
-      <header>
+    <main id="main">
+      <header id="resource-box">
+        <div class="back-link-box">
+          <a href="resource-library.html" class="body-link" id="back-button"
+            >❮ Back</a
+          >
+        </div>
         <h1>NOTES</h1>
       </header>
       <div id="notes-container">
         <ul id="display-note"></ul>
       </div>
       <footer>
-        <a id="add-note" onclick="openForm()"
+        <a id="add-note" onclick="openAddForm()"
           ><img src="./assets/images/Plus.png" class="submit-note" alt="plus"
         /></a>
         <form id="add-note-form">
@@ -38,10 +43,32 @@
             id="noteBodyInput"
             placeholder="Write your note..."
           ></textarea>
-          <button type="submit" id="form-submit-button" onclick="closeForm()">
+          <button type="submit" id="form-add-button" onclick="closeAddForm()">
             Submit
           </button>
-          <button id="form-cancel-button" type="button" onclick="closeForm()">
+          <button id="form-cancel-button" type="button" onclick="closeAddForm()">
+            Cancel
+          </button>
+        </form>
+        <form id="edit-note-form">
+          <h2>Edit note</h2>
+          <input type="text" id="editTitleInput" placeholder="Note title" />
+          <textarea
+            id="editBodyInput"
+            placeholder="Write your note..."
+          ></textarea>
+          <button
+            type="button"
+            id="edit-submit-button"
+
+          >
+            Submit
+          </button>
+          <button
+            id="edit-cancel-button"
+            type="button"
+            onclick="closeEditForm()"
+          >
             Cancel
           </button>
         </form>

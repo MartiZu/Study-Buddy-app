@@ -1,4 +1,4 @@
-let notesUrl = "https://back-end-tech-test.onrender.com/notes";
+let notesUrl = "https://study-buddy-app-backend.onrender.com";
 
 document.addEventListener("DOMContentLoaded", () => {
   displayNotes();
@@ -12,7 +12,7 @@ let noteList = []; // Your array to store notes
 
 async function displayNotes() {
   try {
-    let response = await fetch(notesUrl);
+    let response = await fetch(`${notesUrl}/notes`);
     // console.log(notes)
     let JSONData = await response.json();
     // console.log(obj)
@@ -52,7 +52,7 @@ async function addNote(e) {
   };
 
   try {
-    const response = await fetch(notesUrl, {
+    const response = await fetch(`${notesUrl}/notes`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -119,7 +119,7 @@ function updateUI() {
 // Function to delete a note
 async function deleteNote(noteId) {
   try {
-    const response = await fetch(`${notesUrl}/${noteId}`, {
+    const response = await fetch(`${notesUrl}/notes/${noteId}`, {
       method: "DELETE",
     });
 
@@ -137,10 +137,62 @@ async function deleteNote(noteId) {
   }
 }
 
-function openForm() {
+async function editNote(noteId) {
+  openEditForm();
+  async function submitEditedNote(e) {
+    e.preventDefault(); // Prevent the default form submission behavior
+    const title = document.getElementById("editTitleInput").value;
+    const note = document.getElementById("editBodyInput").value;
+    console.log(title);
+    console.log(note);
+    const editNote = {
+      title: title,
+      note: note,
+    };
+    if (title && note) {
+      try {
+        const response = await fetch(`${notesUrl}/notes/${noteId}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(editNote),
+        });
+        console.log(response);
+        if (response.ok) {
+          // Close the form after a successful update
+          // closeEditForm();
+
+          // Update the UI to reflect the changes
+          updateUI();
+        } else {
+          console.error("Failed to update the note.");
+        }
+      } catch (error) {
+        console.error("An error occurred:", error);
+      }
+    }
+  }
+  const editForm = document.getElementById("edit-submit-button");
+  console.log(editForm);
+  editForm.addEventListener("click", function (e) {
+    e.preventDefault();
+    submitEditedNote(e);
+  });
+}
+
+function openAddForm() {
   document.getElementById("add-note-form").style.visibility = "visible";
 }
 
-function closeForm() {
+function closeAddForm() {
   document.getElementById("add-note-form").style.visibility = "hidden";
 }
+
+function openEditForm() {
+  document.getElementById("edit-note-form").style.visibility = "visible";
+}
+
+// function closeEditForm() {
+//   document.getElementById("edit-note-form").style.visibility = "hidden";
+// }
