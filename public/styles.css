@@ -229,6 +229,9 @@ form {
 
 .formShow {
   visibility: visible;
+  width: 40%;
+  position: fixed;
+  left: 29%;
 }
 
 #main {
