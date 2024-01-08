@@ -6,6 +6,8 @@
 Here is the team project I did on week 8 of The School of Code Bootcamp! Team work was essential to create this great app and I am so amazed by what we were able to build in 4 days. 
 We were asked to reflect on what fellow bootcampers need during the Bootcamp to supprot them and provide a solution to a problem. As a team we all shared what problems we encountered, we then dot voted and identified a problem we wanted to tackle as a team. The sense of isolation bootcamper experience while studying remotely and the need to upskill.
 
+[Backend repo here](https://github.com/MartiZu/Study-Buddy-backend)
+
 ### How to use
 1. After you clone the repo you will need to write in your terminal "npm i" to install all packages.
 2. You will need to create a .env file and create a variable DB_CONNECTION_STRING. Give it value of your database connection string.
