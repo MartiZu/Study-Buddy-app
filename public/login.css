@@ -17,19 +17,27 @@ nav {
 
 /***********Log in ************/
 
-#login main {
+/* #login main {
   margin-top: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 270px;
+} */
+
+#login main {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#logInData {
+ /* #logInData {
   display: flex;
   align-items: center;
-  /* position: fixed;
-  top: 55%; */
+  position: fixed;
+  top: 55%;
   display: flex;
   flex-direction: column;
   color: white;
@@ -41,6 +49,15 @@ nav {
   padding: 15px;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   gap: 5px;
+}  */
+
+#logInData {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
 }
 
 .loginMain {
@@ -53,11 +70,16 @@ nav {
   text-align: center;
 }
 
-#login input {
+/* #login input {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
   border: 0px;
+} */
+
+#login input {
+  width: 100%;
+  background-color: white;
 }
 
 #login button {
@@ -74,13 +96,27 @@ nav {
   border: none;
 }
 
+.continue {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #bf9aff;
+  border-radius: 20px;
+  top: 40%;
+  left: 22%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px;
+}
+
 .popUp {
   display: flex;
   justify-content: center;
   margin-top: -150px;
 }
 
-.continue {
+/* .continue {
   display: flex;
   flex-direction: column;
   background-color: #8f78d8;
@@ -92,7 +128,7 @@ nav {
   position: relative;
   z-index: 999;
   padding-bottom: 10px;
-}
+} */
 
 .continue h2 {
   font-size: 16px;
@@ -107,12 +143,17 @@ nav {
   visibility: hidden;
 }
 
-.register {
+/* .register {
   margin-top: 0.5rem;
+  border: 0;
+} */
+
+.register {
+  margin-top: 20px;
   border: 0;
 }
 
-#newUser {
+/* #newUser {
   padding: 20px;
   border-radius: 20px;
   height: 50%;
@@ -125,8 +166,22 @@ nav {
   flex-direction: column;
   gap: 10px;
   justify-content: space-around;
-}
+} */
 
+#newUser {
+  padding: 20px;
+  border-radius: 20px;
+  height: 40%;
+  width: 70%;
+  position: fixed;
+  top: 20%;
+  left: 15%;
+  background-color: #262627;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+}
 .newUserHide {
   visibility: hidden;
 }
@@ -145,7 +200,7 @@ nav {
   width: 125px;
   color: white;
   font-weight: 200px;
-  border-radius: 8px;
+  border-radius: 20px;
   height: 28px;
   align-self: center;
   border: none;
