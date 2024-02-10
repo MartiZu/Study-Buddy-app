@@ -44,9 +44,9 @@ h1 {
 }
 
 .back-link-box {
-  margin-left: auto;
+  /* margin-left: auto; */
   text-align: left;
-  width: 20rem;
+  width: 30rem;
 }
 
 .back-link-box a {
@@ -60,7 +60,7 @@ h1 {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
   /* border: 5px solid white; */
-  padding: 0;
+  padding: 0 20px;
 }
 
 .note-tile {

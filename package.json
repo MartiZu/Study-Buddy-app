@@ -1,12 +1,12 @@
 {
   "name": "bc15-w8-project-front-end-tech-gladiators",
   "version": "1.0.0",
-  "description": "Feel free to delete this and start from scratch.",
+  "description": "An app for students to meet and learn with eachother.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon -r dotenv/config backend/server.js",
+    "start": "node server.js",
+    "dev": "nodemon -r dotenv/config server/server.js",
     "reset-database": "node -r dotenv/config backend/db/scripts/reset-database.js"
   },
   "keywords": [],
@@ -24,6 +24,6 @@
   "devDependencies": {
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.8.9",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.3"
   }
 }
