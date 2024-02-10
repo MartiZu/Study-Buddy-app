@@ -11,6 +11,7 @@ We were asked to reflect on what fellow bootcampers need during the Bootcamp to 
 ### How to use
 1. After you clone the repo you will need to installe all packages `npm i`
 2. Run the server with `npm run dev`
+3. Example for login credentials `Username: Marti147 password: 123`
 
 ## Planning phase
 We spent the first 2 days doing research and planning. We used Figma to build a low and high fidelity wireframe, we conducted research interviews and collected data using a questionnaire. All the data collected was used to create 2 user personas and build users stories. That's how our idea started to become something more concrete. We used Disney ideation to focus on what we would have actually been able to build in the time frame we had and with the set of skills we had. Ultimately we defined an MVP and extra features that we would have loved to build, but that we might not have time to do during the project week.
