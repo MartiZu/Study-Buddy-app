@@ -40,18 +40,19 @@ nav {
 }
 
 main {
-  width: 40%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.1rem;
+  padding: .5rem;
   box-sizing: border-box;
-  min-width: 300px;
+  min-width: 320px;
   /* max-width: 500px; */
 }
 
 #welcome-box {
-  padding: 0 4rem 0 1.1rem;
+  padding: 0 1.1rem;
   margin-bottom: 1.8rem;
+  text-align: justify;
 }
 
 #welcome-box h1 {
@@ -163,6 +164,7 @@ a {
 
 .resource-header-image {
   height: 150px;
+  margin-top: 1rem;
 }
 
 .back-link-box {
