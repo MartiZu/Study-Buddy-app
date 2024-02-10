@@ -100,7 +100,7 @@ nav {
   position: fixed;
   display: flex;
   flex-direction: column;
-  background-color: #bf9aff;
+  background-color: #8f78d8;
   border-radius: 20px;
   top: 40%;
   left: 22%;
@@ -119,7 +119,7 @@ nav {
 /* .continue {
   display: flex;
   flex-direction: column;
-  background-color: #8f78d8;
+  background-color: #;
   border-radius: 20px;
   align-items: center;
   justify-content: space-evenly;

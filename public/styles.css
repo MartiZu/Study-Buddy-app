@@ -220,6 +220,8 @@ form {
 
 #newRes {
   border-radius: 13px;
+  width: 50%;
+  margin-left: -8%;
 }
 
 #newRes h2 {
