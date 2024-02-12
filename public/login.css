@@ -80,6 +80,7 @@ nav {
 #login input {
   width: 50%;
   background-color: white;
+  border-radius: 8px;
 }
 
 #login button {
