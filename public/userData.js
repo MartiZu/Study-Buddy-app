@@ -4,7 +4,7 @@ let localImg = localStorage.getItem("img");
 document.getElementById(
   "user-info"
 ).innerHTML = `<p id="username">${localUsername}</p>
-<a href="user-page.html"><div id="profile-pic"></div></a>`;
+<a href="user-page.html" aria-label="profile picture taking you to user page"><div id="profile-pic"></div></a>`;
 
 document.getElementById("userImage").innerHTML = `#profile-pic{
     background-image: url('${localImg}');
